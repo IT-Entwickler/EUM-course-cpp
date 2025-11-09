@@ -11,7 +11,7 @@ int main()
     std::cout << "Enter two numbers:" << std::endl;
     std::cin >> a >> b;
 
-    std::cout << "What operation do you want to perform? << std::endl";
+    std::cout << "What operation do you want to perform?" << std::endl;
     std::cout << "1 - Addition" << std::endl;
     std::cout << "2 - Subtraction" << std::endl;
     std::cout << "3 - Multiplication" << std::endl;

@@ -37,15 +37,18 @@ int main()
         std::cout << "The result of the action is " << a - b << std::endl;
         break;
     case 3:
-        if (std::abs(a * b) > 4000000)
+    {
+        double result = a * b;
+        if (std::abs(result) > 4000000)
         {
             std::cout << "Error: the result is too large." << std::endl;
         }
         else
         {
-            std::cout << "The result of the action is " << a * b << std::endl;
+            std::cout << "The result of the action is " << result << std::endl;
         }
-        break;
+    }
+    break;
     case 4:
         if (b != 0)
         {
@@ -57,15 +60,18 @@ int main()
         }
         break;
     case 5:
-        if (std::abs(pow(a, b)) > 4000000)
+    {
+        double result = pow(a, b);
+        if (std::abs(result) > 4000000)
         {
             std::cout << "Error: the result is too large." << std::endl;
         }
         else
         {
-            std::cout << "The result of the action is " << pow(a, b) << std::endl;
+            std::cout << "The result of the action is " << result << std::endl;
         }
-        break;
+    }
+    break;
     case 6:
         if (b > 0 && b != 1 && a > 0)
         {

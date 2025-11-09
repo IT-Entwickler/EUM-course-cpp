@@ -7,10 +7,8 @@ int main()
     std::cout << "Введите x: ";
     std::cin >> x;
 
-    bool belongs = (x > -12 && x < 0) || (x == 1) ||
-                   (x >= 4 && x <= 8) || (x > 12 && x <= 48);
+    bool belongs = x > -12 && x < 0 || x == 1 || x >= 4 && x <= 8 || x > 12 && x <= 48;
     if (belongs)
-
     {
 
         std::cout << "Число " << x << " принадлежит указанным промежуткам" << std::endl;
