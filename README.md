@@ -1,7 +1,7 @@
 # EUM-course-cpp 
 # C++ Programming Course
 
-The course consists of **3 modules** with a total of 32 lessons.
+The course consists of 3 modules with a total of 32 lessons.
 
 ## 📚 The modules
 
@@ -13,5 +13,6 @@ The course consists of **3 modules** with a total of 32 lessons.
 
 
 ### [Module 3: Advanced](module3_advanced/)  
-1-8 lessons - Industrial development C++*
+1-8 lessons - Industrial development C++
+
 
