@@ -1,29 +1,27 @@
 #include <iostream>
+#include <cmath> 
 
-int main()
-{
-    int n;
+int main() {
+    int number;
     std::cout << "Введите число: ";
-    std::cin >> n;
+    std::cin >> number;
 
-    if (n < 0)
-        n = -n;
+    number = std::abs(number);  // используем std::abs для модуля числа
 
-    int count = 0;
+    int odd_digits_count = 0;
+    std::cout << "Для числа " << number << " нечетные цифры: ";
 
-    std::cout << "Для числа " << n << " нечетные цифры: ";
-
-    for (int t = n; t > 0; t /= 10)
-    {
-        int d = t % 10;
-        if (d % 2)
-        {
-            if (count++)
+    for (int temp = number; temp > 0; temp /= 10) {
+        int digit = temp % 10;
+        if (digit % 2) {
+            if (odd_digits_count++) {
                 std::cout << ", ";
-            std::cout << d;
+            }
+            std::cout << digit;
         }
     }
 
-    std::cout << " - всего " << count << " нечётных разряда." << std::endl;
+    std::cout << " - всего " << odd_digits_count << " нечётных разряда." << std::endl;
+
     return 0;
 }

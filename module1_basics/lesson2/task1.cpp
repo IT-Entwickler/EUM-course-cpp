@@ -43,13 +43,21 @@ int main()
     std::cout << "\n=== РЕЗУЛЬТАТ ===\n";
 
     if (score <= 75)
+    {
         std::cout << name << ", ты - Человек-паук!\n";
+    }
     else if (score <= 125)
+    {
         std::cout << name << ", ты - Бэтмен!\n";
+    }
     else if (score <= 175)
+    {
         std::cout << name << ", ты - Халк!\n";
+    }
     else
+    {
         std::cout << name << ", ты - Доктор Стрэндж!\n";
+    }
 
     std::cout << "Спасибо за тест!\n";
     return 0;
