@@ -16,7 +16,7 @@ int main()
     {
         if (!std::isdigit(c))
         {
-            std::cout << "Ошибка! Введите только цифры." << std::endl;
+            std::cout << "Ошибка. Введите только цифры." << std::endl;
             return 1;
         }
     }
@@ -24,16 +24,14 @@ int main()
     // Проверка что число не пустое
     if (input.empty())
     {
-        std::cout << "Ошибка! Введите число." << std::endl;
+        std::cout << "Ошибка. Введите число." << std::endl;
         return 1;
     }
 
     // Преобразование строки в число
     number = std::stoi(input);
-
-
     bool isPalindrome = true;
-    int originalNumber = number;
+
     int reversedNumber = 0;
     int temp = number;
 
@@ -46,16 +44,16 @@ int main()
     }
 
     // Сравниваем исходное число с перевернутым
-    isPalindrome = (originalNumber == reversedNumber);
+    isPalindrome = (number == reversedNumber);
 
     // Вывод результата
     if (isPalindrome)
     {
-        std::cout << "Число " << originalNumber << " является палиндромом!" << std::endl;
+        std::cout << "Число " << number << " является палиндромом." << std::endl;
     }
     else
     {
-        std::cout << "Число " << originalNumber << " не является палиндромом." << std::endl;
+        std::cout << "Число " << number << " не является палиндромом." << std::endl;
     }
 
     return 0;
